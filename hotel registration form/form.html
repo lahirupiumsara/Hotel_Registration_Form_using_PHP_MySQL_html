@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+<style>
+
+.div1
+{
+border:2px solid lightblue;
+width:500px;
+height:300px;
+padding: 10px;
+}
+
+</style>
+
+
+</head>
+
+<body> 
+
+<div class="div1"> 
+
+<h1>Hotel Registration Form</h1>
+<form action="submit_form.php" method="post" >
+    <table>
+        <tr>
+            <td>Guest Name:</td>
+            <td><input type="text" name="guest_name"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" name="address"></td>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Phone No:</td>
+            <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+            <td>Room Type:</td>
+            <td>
+                <select name="room_type">
+                    <option value="single" default>--Please select a room type--</option>
+                    <option value="single">Single room</option>
+                    <option value="double">Double room</option>
+                    <option value="triple">Triple room</option>
+                    <option value="quad">Quad room</option>
+                    <option value="queen">Queen room</option>
+                    <option value="king">King room</option>
+                    <option value="twin">Twin room</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Arrival Date:</td>
+            <td><input type="date" name="arrival_date"></td>
+        </tr>
+        <tr>
+            <td>Departure Date:</td>
+            <td><input type="date" name="departure_date"></td>
+        </tr>
+        <tr>
+            <td><button type="submit" name="submit" value="add">Add</button></td>
+            <td>
+                <button type="reset" name="clear" value="clear">Clear</button>
+                <button type="submit" name="search" value="search">Search</button>
+                <button type="submit" name="update" value="update">Update</button>
+                <button type="submit" name="delete" value="delete">Delete</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</div>
+
+</body>
+
+</html>
